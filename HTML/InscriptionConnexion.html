@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+	
+	<head>
+		<meta charset="utf-8"/>
+		<title> Smart Home IOT </title>
+		<meta name="description" content=" Créer un Réseau Locale Connectée " />
+		<meta name="keywords" content=" IOT ,IDO, réseau locale , objet connectée , domotique "/>
+		<link rel="stylesheet" href="../CSS/style.css" />
+	</head>
+	
+	
+	<body>
+	
+	<header>
+		<img src="../images/Logo Verticale/Logo Sticker.png" alt="Le Logo du Smart Home (IOT)" class="LogoSmartHomeIOT" />
+		<h1 id="titre_principal" >  Welcome to Smart Home  </h1> 
+	</header>
+	
+	
+	<nav>
+		<ul class="menu">
+			<li><a href="../acceuil.html"> Accueil </a></li>
+			<li><a href="#"> Inscription/Connexion </a></li>
+			<li><a href="AvantageDomotique.html"> Avantage du Domotique </a></li>
+			<li><a href="SolutionTechnique.html"> Solution Technique </a></li>
+			<li><a href="PasseruneCommande.html"> Passer une Commande </a></li>
+		</ul>
+	</nav>
+	
+	
+	<article> 
+		<form name="form1" method="post" action="login_check.php" >
+			<fieldset id="format" class="Inscription">
+				<legend> <h3>  Déjà Inscrit </h3> </legend>
+		 
+				<label for="username"> Adresse E-mail </label>
+				<input type="text" name="username" id="username" size="40" maxlength="30" required autofocus />
+				</br>
+				
+				<label for="password">  Mot de Passe </label>
+				<input type="password" name="password" id="password" size="30" maxlength="30" required />
+				</br>
+				
+				<p> > Mot de Passe oublié ? </p>
+				
+				<input type="submit" value="Se Connecter" />
+				<input type="reset" value="Annuler" />
+				
+			</fieldset>
+		</form>
+	
+		<form name="form2" method="post" action="creation.php" >
+			<fieldset id="format" class="Connexion">
+				<legend> <h3>  Nouveau Client </h3> </legend>
+					<fieldset id="format">
+					<legend> <h4>  Information Personelle </h4> </legend>
+					
+						<label for="Genre"> Civilité </label>
+						<select name="civilité" id="Genre" >
+							<option value="Monsieur" selected > M </option>
+							<option value="Madame" > Mme </option>
+							<option value="Madamoiselle" > Melle </option>
+						</select>
+						</br>
+						
+						<label for="Nomation"> Nom* </label>
+						<input type="text" name="Nomation" id="Nomation" required />
+						</br>
+						
+						<label for="Prenomation"> Prenom* </label>
+						<input type="text" name="Prenomation" id="Prenomation" required />
+						</br>
+						
+						<label for="naissance"> Date de Naissance </label>
+						<input type="date" name="naissance" id="naissance" value="1992-01-01" min="1990-01-01" max="2000-01-01" />
+						</br>
+						
+						<label for="numtel"> Tel </label>
+						<input type="text" name="numtel" id="numtel" placeholder="Numereau de téléphone avec 8 chiffres" pattern="[0-9]{8}"/>
+						</br>
+					
+					</fieldset>
+					
+					<fieldset id="format">
+					<legend> <h4>  Necessité du Compte </h4> </legend>
+						
+						<label for="Adressmail"> Email* </label>
+						<input type="text" name="Adressmail" id="Adressmail" required />
+						</br>
+						
+						<label for="password"> Mot de Passe* </label>
+						<input type="text" name="password" id="password" required />
+						</br>
+						
+						<label for="passwordconfirmation"> Confirmation du Mot de Passe* </label>
+						<input type="text" name="passwordconfirmation" id="passwordconfirmation" required />
+						</br>
+						
+					</fieldset>
+				
+				<p class="libre"> 
+				</br>
+				</br>
+				Quelle est votre état d'utilisation :</br>
+				<input type="checkbox" name="choix1" id="Création" />
+				<label for="Création" > Je veux créer un réseau locale permettant de connecter ma maison qui est au début / en cour de sa construction </label> </br>
+				<input type="checkbox" name="choix2" id="Adaptation" />
+				<label for="Adaptation" > Je veux ajouter un réseau locale permettant de connecter ma maison totalement construite </label> </br>
+				</p>
+				
+				<p> * : Champs Obligatoire </p>
+				
+				<input type="submit" value="Créer mon Compte" />
+				<input type="reset" value="Effacer" />
+				
+				
+				
+			</fieldset>
+		</form>
+	</article>
+	
+
+	<div class="libre" >
+	<br/><br/><br/>
+	</div>
+	
+	<footer>
+	<div class="centrer">  
+	<p>
+	<br/><br/>
+	SmartHome(IOT) &copy; 2021-2022 <br/>
+	<br/>
+	Ce Site Web est réalisée par ce Binôme :  <br/>
+	Oueslati Ouala Eddine & Mahdi Zaouali en L2 BC G01
+	</p>
+	</div>
+	</footer>
+	
+	</body>
+	
+	
+	</html>
+
+
+
+
+
+
+	<!--
+		<div class="hero">
+		<div class="form-box">
+		<div class="button-box">
+		<div id="btn"></div>
+		<button type="button" class="toggle-btn">Log In</button>
+		<button type="button" class="toggle-btn">Register</button>
+		</div>
+		<div class="social-icons">
+		<img src="fb.png">
+		<img src="tw.png">
+		<img src="gp.png">
+		</div>
+		<form class="input-group">
+		<input type="text" class="input-field"
+		placeholder="User Id" required>
+		<input type="text" class="input-field" placeholder="Enter Password"
+		required>
+		<input type="checkbox" class="chech-box"><span>Remember
+		Password</span>
+		</form>
+		</div>
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+*/
